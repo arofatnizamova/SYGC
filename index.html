@@ -21,19 +21,18 @@
             <div class="container">
                 <a class="navbar-brand me-xxl-5 me-sm-3 me-1" href="index.html">
                     <img src="icons/main-icons/logo.svg" alt="Логотип Velvet" class="d-xl-inline-block d-none logo-xl">
-                    <img src="icons/logo.svg" alt="Логотип Velvet" class="d-xl-none d-xl-inline-block logo">
+                    <img src="icons/main-icons/logo-mobile.svg" alt="Логотип Velvet" class="d-xl-none d-xl-inline-block logo">
                 </a>
                 <div class="d-xl-none d-flex align-items-center gap-md-4 gap-3">
                     <a href="#">
                         <i class="fa-solid fa-magnifying-glass text-gray fs-4 pt-1"></i>
                     </a>
-                    <div class="dropdown">
+                    <div class="dropdown language-switch">
                         <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="rounded-flag overflow-hidden me-2"><span class="fi fi-ru fs-5"></span></span> RU
+                            RU
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Английский</a></li>
-                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
                         </ul>
                     </div>
                     <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -50,22 +49,51 @@
                             <a class="nav-link" href="about.html">О компании</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="career.html">Карьера</a>
+                            <div class="dropdown">
+                                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Решения
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="dessision-category.html">IP телефония</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Аналитические решения</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Виртуализация рабочих столов</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">ИБП</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Классическая сеть</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">ПК и Lenovo</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Сервера</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Сетевая безопасность</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Сеть DNS</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Системы хранения данных</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Совместная работа</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="web-dev.html">Наши услуги</a>
+                            <div class="dropdown">
+                                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    IT-услуги
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="software-dev.html">Разработка и сопровождение ПО</a></li>
+                                    <li><a class="dropdown-item" href="crm-integration.html">Интеграция CRM</a></li>
+                                    <li><a class="dropdown-item" href="server-equipment.html">Серверное и сетевое оборудование</a></li>
+                                    <li><a class="dropdown-item" href="it-integration.html">Интеграция комплексных IT - решений</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">Новости</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacts.html">Контакты</a>
                         </li>
                     </ul>
-                    <div class="dropdown d-xl-block d-none">
+                    <div class="dropdown d-xl-block d-none language-switch me-4">
                         <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             RU
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Английский</a></li>
-                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
                         </ul>
                     </div>
                     <button href="#" class="d-xl-flex d-none search-button">
@@ -82,7 +110,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
-                        <div class="w-100">
+                        <div class="w-100 text-lg-start text-center">
                             <h1 class="text-3xl">
                                 SYGC — поставщик <br> IT-решений и сервисов
                             </h1>
@@ -90,14 +118,20 @@
                                 Поставляем ПО от ведущих мировых вендоров, проектируем архитектуру IT-инфраструктуры и сопровождаем клиента на всех этапах — от подбора решения до технической поддержки
                             </p>
                             <div class="row gy-3">
-                                <div class="col-lg-3">
+                                <div class="col-xxl-3 col-lg-4">
                                     <a href="#" class="btn btn-white">
-                                        Узнать больше
+                                        <span>Узнать больше</span>
+                                        <span class="arrow-icon">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
                                     </a>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-xxl-3 col-lg-4">
                                     <a href="#" class="btn btn-outline-white">
-                                        Связаться с нами
+                                        <span>Связаться с нами</span>
+                                        <span class="arrow-icon">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -128,6 +162,11 @@
                 </div>
             </div>
         </section>
+        <section class="py-5 bg-corp">
+            <div class="container">
+
+            </div>
+        </section>
 
     </main>
 
@@ -135,7 +174,7 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-2">
-                    <img src="icons/footer-logo.svg" alt="Логотип Velvet" class="img-fluid logo-footer">
+                    <img src="icons/main-icons/logo-mobile.svg" alt="Логотип Velvet" class="img-fluid logo-footer">
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="w-100 d-flex justify-content-lg-center fw-light text-xs">
