@@ -215,6 +215,12 @@ a {
     color: rgb(149, 149, 149);
 }
 
+header .navbar-toggler-icon {
+    background-image: url('icons/main-icons/burger-dark.svg');
+    width: 1em;
+    height: 1em;
+}
+
 .header-dark .navbar-toggler-icon {
     background-image: url('icons/main-icons/burger.svg');
     width: 1em;
@@ -232,6 +238,9 @@ a {
     border-radius: 50px;
 }
 
+.language-switch .dropdown-toggle {
+    color: white !important;
+}
 
 /* custom styles */
 .icon-size-md {
@@ -246,20 +255,27 @@ a {
     height: 100vh;
 }
 
-.header-dark {
-    width: 100%;
-    font-size: 14px;
-    color: white !important;
-    border: none !important;
+.banner-section-2 {
+    height: 60vh;
 }
 
+
 header {
-    background: transparent;
+    background: white;
     position: fixed;
     z-index: 99999;
+    font-size: 14px;
     transition: background-color 0.6s ease;
     top: 0;
+    border: none !important;
     width: 100%;
+}
+
+
+
+.header-dark {
+    color: white !important;
+    background: transparent;
 }
 
 .header-dark .nav-link,
@@ -274,17 +290,21 @@ header {
 }
 
 .search-button {
-    background: rgba(217, 217, 217, 0.16);
+    background: rgba(124, 124, 124, 0.16);
     height: 100%;
     width: 250px;
     border: none;
     border-radius: 50px;
-    color: white;
+    color: #868686;
     justify-content: space-between;
     padding: 10px 20px;
     font-size: 16px;
 }
 
+.header-dark .search-button {
+    background: rgba(217, 217, 217, 0.16);
+    color: white;
+}
 
 .glass3d {
     --color-glass3d: hsl(0 0% 85% / 0.15);
@@ -576,6 +596,24 @@ main>section:first-of-type {
 
 .border-lg-top {
     border-top: 2px solid var(--color-corp);
+}
+
+.card-img-hover,
+.card-img-hover img {
+    transition: all 0.3s ease;
+}
+
+.card-img-hover img {
+    opacity: 0;
+    z-index: -1;
+}
+
+.card-img-hover:hover img {
+    opacity: 1;
+}
+
+.arrow {
+    width: 220px;
 }
 
 /* На сенсорных устройствах содержимое видно сразу */
