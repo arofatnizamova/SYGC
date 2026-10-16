@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYGC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand me-xxl-5 me-sm-3 me-1" href="index.html">
+                    <img src="icons/main-icons/logo-dark.svg" alt="Логотип Velvet" class="d-xl-inline-block d-none logo-xl">
+                    <img src="icons/main-icons/logo-dark-mobile.svg" alt="Логотип Velvet" class="d-xl-none d-xl-inline-block logo">
+                </a>
+                <div class="d-xl-none d-flex align-items-center gap-md-4 gap-3">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass text-gray fs-4 pt-1"></i>
+                    </a>
+                    <div class="dropdown language-switch">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mx-auto mb-lg-0 fw-light gap-xxl-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Решения
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="dessision-category.html">IP телефония</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Аналитические решения</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Виртуализация рабочих столов</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">ИБП</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Классическая сеть</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">ПК и Lenovo</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Сервера</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Сетевая безопасность</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Сеть DNS</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Системы хранения данных</a></li>
+                                    <li><a class="dropdown-item" href="dessision-category.html">Совместная работа</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    IT-услуги
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="software-dev.html">Разработка и сопровождение ПО</a></li>
+                                    <li><a class="dropdown-item" href="crm-integration.html">Интеграция CRM</a></li>
+                                    <li><a class="dropdown-item" href="server-equipment.html">Серверное и сетевое оборудование</a></li>
+                                    <li><a class="dropdown-item" href="it-integration.html">Интеграция комплексных IT - решений</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown d-xl-block d-none language-switch me-4">
+                        <button class="border-0 bg-transparent d-flex align-items-center text-uppercase text-dark-gray dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                        </ul>
+                    </div>
+                    <button href="#" class="d-xl-flex d-none search-button">
+                        <span class="opacity-75 fw-light">Поиск</span>
+                        <i class="fa-solid fa-magnifying-glass  text-gray "></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="fw-semibold text-md my-3 text-lg-start text-center text-corp-2">
+                    Партнёрства и работа с экосистемой
+                </h2>
+                <div class="d-flex mb-5 align-items-center gap-2 text-sm">
+                    <i class="bi bi-calendar-event"></i>
+                    <span>
+                        20 фев. 2026
+                    </span>
+                </div>
+                <img src="images/news-page/2.png" alt="" class="img-fluid">
+                <p class="mt-5 text-xs fw-light">
+                    Работа системного интегратора строится на партнёрствах, и 2025 год это подтвердил. SERVICE YOU сотрудничает с ведущими вендорами и технологическими партнёрами, обеспечивая
+                    заказчикам доступ к
+                    проверенным продуктам и корректному лицензированию. Региональное присутствие компании — с филиалами в странах Центральной Азии — помогает поддерживать проекты сразу на нескольких
+                    рынках
+                </p>
+                <p class="mt-5 text-xs fw-light">
+                    Среди тех, с кем мы работали в течение года, — крупные промышленные и производственные предприятия, участники быстрорастущей цифровой и платёжной среды, ритейл и электронная
+                    коммерция, а также
+                    организации государственного, научного и международного профиля. Это сочетание «классического» корпоративного сегмента и динамичного финтеха отражает нашу роль: быть связующим
+                    звеном между
+                    технологиями вендоров и реальными задачами бизнеса.
+                    В новом году мы намерены укреплять эти связи и расширять портфель решений, оставаясь для клиентов предсказуемым и профессиональным партнёром
+                </p>
+            </div>
+        </section>
+        <section class="py-5 bg-main">
+            <div class="container">
+                <h3 class="mb-5 text-md text-corp-2">
+                    Другие новости
+                </h3>
+                <div class="row gy-4">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 bg-white rounded-4 position-relative d-flex flex-column">
+                            <div class="position-absolute rounded-3 text-xs fw-medium p-2 news-card-box text-corp">
+                                <i class="bi bi-calendar-event"></i> <span>20 февраля</span>
+                            </div>
+
+                            <img src="images/news-page/1.png" alt="" class="img-fluid">
+
+                            <div class="p-3 d-flex flex-column news-container flex-grow-1">
+                                <h5 class="fw-medium text-sm">
+                                    Партнёрства и работа с экосистемой
+                                </h5>
+
+                                <p class="fw-light opacity-75 text-xs my-3">
+                                    Работа системного интегратора строится на партнёрствах, и 2025 год это подтвердил
+                                </p>
+
+                                <a href="news-item.html" class="text-2xs text-corp text-decoration-none mt-auto d-inline-flex align-items-center gap-2">
+                                    Узнать больше
+                                    <i class="bi bi-arrow-right-circle-fill text-corp-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 bg-white rounded-4 position-relative d-flex flex-column">
+                            <div class="position-absolute rounded-3 text-xs fw-medium p-2 news-card-box text-corp">
+                                <i class="bi bi-calendar-event"></i> <span>20 февраля</span>
+                            </div>
+
+                            <img src="images/news-page/1.png" alt="" class="img-fluid">
+
+                            <div class="p-3 d-flex flex-column news-container flex-grow-1">
+                                <h5 class="fw-medium text-sm">
+                                    Цифровой архив — ключ к эффективному налоговому мониторингу
+                                </h5>
+
+                                <p class="fw-light opacity-75 text-xs my-3">
+                                    AI-агенты автоматизируют коммуникации, обрабатывают запросы клиентов и помогают компаниям
+                                </p>
+
+                                <a href="news-item.html" class="text-2xs text-corp text-decoration-none mt-auto d-inline-flex align-items-center gap-2">
+                                    Узнать больше
+                                    <i class="bi bi-arrow-right-circle-fill text-corp-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 bg-white rounded-4 position-relative d-flex flex-column">
+                            <div class="position-absolute rounded-3 text-xs fw-medium p-2 news-card-box text-corp">
+                                <i class="bi bi-calendar-event"></i> <span>20 февраля</span>
+                            </div>
+
+                            <img src="images/news-page/1.png" alt="" class="img-fluid">
+
+                            <div class="p-3 d-flex flex-column news-container flex-grow-1">
+                                <h5 class="fw-medium text-sm">
+                                    AI-агенты для коммуникаций как часть стратегии гиперавтоматизации
+                                </h5>
+
+                                <p class="fw-light opacity-75 text-xs my-3">
+                                    AI-агенты автоматизируют коммуникации, обрабатывают запросы клиентов и помогают компаниям
+                                </p>
+
+                                <a href="news-item.html" class="text-2xs text-corp text-decoration-none mt-auto d-inline-flex align-items-center gap-2">
+                                    Узнать больше
+                                    <i class="bi bi-arrow-right-circle-fill text-corp-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-lg-5 pt-5 text-white position-relative" style="background: url('images/home-page/bg-img-2.svg') no-repeat center/cover;">
+            <div class="container py-lg-5">
+                <div class="row mb-5 text-lg-start text-center">
+                    <div class="col-lg-5">
+                        <h4 class="text-lg">
+                            Свяжитесь с нашей командой IT-экспертов
+                        </h4>
+                        <p class="text-sm fw-light my-5">
+                            Мы поможем найти лучшее решение для вашего бизнеса
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="#" class="btn btn-white">
+                                    <span>Узнать больше</span>
+                                    <span class="arrow-icon">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <img src="images/home-page/3.png" alt="" class="position-absolute top-0 end-0 h-100 object-fit-cover d-lg-block d-none">
+            <img src="images/home-page/3.png" alt="" class="img-fluid w-100 object-fit-cover d-lg-none d-block">
+        </section>
+    </main>
+
+    <footer class="py-lg-5 py-3 bg-corp text-white">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-2">
+                    <img src="icons/main-icons/logo-mobile.svg" alt="Логотип Velvet" class="img-fluid logo-footer">
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-xs">
+                        <div>
+                            <p class="text-uppercase fw-medium">Программное обеспечение</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="web-dev.html">
+                                        Облачные сервисы
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="web-dev.html">
+                                        Операционные системы и приложения
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="bot-dev.html">
+                                        Антивирусные решения
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="mobile-dev.html">
+                                        Аналитика
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="crm-dev.html">
+                                        Информационная безопасность
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="server-administaration.html">
+                                        Бизнес – решения
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="web-support.html">
+                                        САПР
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="ai-dev.html">
+                                        Системы виртуализации
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-xs">
+                        <div>
+                            <p class="text-uppercase fw-medium">Аппаратное обеспечение</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="smm-promotion.html">
+                                        Серверное оборудование
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="contex-advert.html">
+                                        Системы хранения данных
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="seo-optimization.html">
+                                        Телекоммуникационные и инфраструктурные решения
+                                        (внутри пунктов будут сами продукты уже)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-xs">
+                        <div>
+                            <p class="text-uppercase fw-medium">IT-Услуги </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="ui-ux.html">
+                                        Разработка и сопровождение ПО
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="presentation-dev.html">
+                                        Интеграция CRM
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="catalog-dev.html">
+                                        Серверное и сетевое оборудование
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="logos-dev.html">
+                                        Интеграция комплексных IT - решений
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex justify-content-lg-center fw-light text-xs">
+                        <div>
+                            <p class="text-uppercase fw-medium">Связатся с нами</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#">
+                                        E-mail : <span class="fw-normal">info@serviceyou.uz</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#">
+                                        Телефон : <span class="fw-normal">+998712007744</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script src="https://kit.fontawesome.com/f817facf9f.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="main.js "></script>
+</body>
+
+</html>
